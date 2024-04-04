@@ -264,43 +264,34 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['case_id'] !== null ? autolinker.link(feature.properties['case_id'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + "<b>Case ID: </b>" + (feature.properties['case_id'] !== null ? autolinker.link(feature.properties['case_id'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['case_status'] !== null ? autolinker.link(feature.properties['case_status'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + "<b>Case Status: </b>" + (feature.properties['case_status'] !== null ? autolinker.link(feature.properties['case_status'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['judgement'] !== null ? autolinker.link(feature.properties['judgement'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + "<b>Judgment: </b>" + (feature.properties['judgement'] !== null ? autolinker.link(feature.properties['judgement'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['name'] !== null ? autolinker.link(feature.properties['name'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + "<b>Defendant: </b>" + (feature.properties['name'] !== null ? autolinker.link(feature.properties['name'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['case_type'] !== null ? autolinker.link(feature.properties['case_type'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + "<b>Plaintiff: </b>" + (feature.properties['plaintiff'] !== null ? autolinker.link(feature.properties['plaintiff'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['street'] !== null ? autolinker.link(feature.properties['street'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + "<b>Case Type: </b>" + (feature.properties['case_type'] !== null ? autolinker.link(feature.properties['case_type'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['unit'] !== null ? autolinker.link(feature.properties['unit'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + "<b>Address: </b>" + (feature.properties['street'] !== null ? autolinker.link(feature.properties['street'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['city'] !== null ? autolinker.link(feature.properties['city'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + "<b>Unit: </b>" + (feature.properties['unit'] !== null ? autolinker.link(feature.properties['unit'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['state'] !== null ? autolinker.link(feature.properties['state'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + "<b>File Date: </b>" +  (feature.properties['file_date'] !== null ? autolinker.link(feature.properties['file_date'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['zip'] !== null ? autolinker.link(feature.properties['zip'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['file_date'] !== null ? autolinker.link(feature.properties['file_date'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['next_event_date'] !== null ? autolinker.link(feature.properties['next_event_date'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['plaintiff'] !== null ? autolinker.link(feature.properties['plaintiff'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + "<b>Next Event (e.g., Hearing) Date: </b>" + (feature.properties['next_event_date'] !== null ? autolinker.link(feature.properties['next_event_date'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
